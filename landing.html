@@ -59,14 +59,17 @@
         h1, h2, h3, h4, h5, h6{line-height: 1.5em}
         p{margin-bottom: 1.2em; line-height: 2em}
         a.buy-link{font-family: "Nunito Sans", sans-serif; color: #333; display: inline-block; text-decoration: none; border-bottom: 1px solid #111; border-color: rgba(17,17,17,.2); text-transform: uppercase; }
+        a.buy-link *{font-family: "Nunito Sans", sans-serif; font-size: 1em}
+        a.buy-link *:hover{cursor: pointer}
         a.buy-link:hover{border-color: #000;}
         body > .container {max-width: 1200px}
         .primary-logo{text-align: center; padding-top: 20px}
-        .main-nav > header{text-align: center; border-style: none; padding: 40px 0 20px 0}
+        .main-nav > header{text-align: center; border-style: none; padding: 40px 0 20px 0; }
+        .main-nav > header a, .main-nav > header a *{font-family: "Nunito Sans", sans-serif !important;}
 
         .book-intro{padding: 80px 0}
         .book-intro h3{color: #999; text-transform: uppercase; font-size: 1em; line-height: 1.5em; font-family: "Nunito Sans", sans-serif; font-size: 1em}
-        .book-intro h2{letter-spacing: .01em; line-height: 1.7em; margin-bottom: 2em}
+        .book-intro h2{letter-spacing: .01em; line-height: 1.7em; margin-bottom: 2em; color:#111}
         .book-intro a.buy-link{font-size: 0.8em;}
         .book-info{text-align: left; color: #ccc; font-size: 1.2em; }
 
@@ -87,6 +90,8 @@
 
         @media screen and (max-width: 767px) {
             .primary-logo > img{max-width: 70px;}
+            .book-intro h2{font-size: 1.6em}
+            .book-intro{padding: 20px 0}
         }
     </style>
 </head>
@@ -135,7 +140,7 @@
 
         <div class="col-sm-12 buy-main" style="text-align: center">
             <p>
-                <a class="buy-link" href="#" style="margin-right: 40px">Đặt mua</a>
+                <a class="buy-link" href="#modal-purchase" style="margin-right: 40px"><label for="modal-purchase">Đặt mua</label></a>
                 <a class="buy-link" href="#" style="pointer-events: none; cursor: default; color: #ccc">Đặt mua từ Amazon (Coming soon)</a>
             </p>
         </div>
@@ -151,7 +156,7 @@
 
             <p>Hãy ĐI LON TON cùng Mắt Ướt, Vẽ Vời và Xanh Lá để khám phá bí mật của thiên nhiên bạn nhé!</p>
             <p style="margin-top: 40px">
-                <a class="buy-link" href="#" style="margin-right: 80px">Đặt mua</a>
+                <a class="buy-link" href="#modal-purchase" style="margin-right: 40px"><label for="modal-purchase">Đặt mua</label></a>
                 <a class="buy-link" href="#">Đặt mua từ Amazon</a>
             </p>
         </div>
@@ -176,7 +181,7 @@
             <p>Nếu Mặt Trăng biến mất, bạn có muốn bay lên trời tìm lại Mặt Trăng?<br/>
 
             <p style="margin-top: 40px">
-                <a class="buy-link" href="#" style="margin-right: 80px">Đặt mua</a>
+                <a class="buy-link" href="#modal-purchase" style="margin-right: 40px"><label for="modal-purchase">Đặt mua</label></a>
                 <a class="buy-link" href="#">Đặt mua từ Amazon</a>
             </p>
         </div>
@@ -209,37 +214,11 @@
             <!--</p>-->
         </div>
     </div>
-
-
-
-
-    <!--<div class="row testimonial">-->
-        <!--<div class="col-sm-12 col-md-8 col-md-offset-2 testimonial">-->
-            <!--<h1>Bạn đọc của Đi lon ton nói gì? <small>Subheading</small></h1>-->
-
-            <!--<div class="col-sm-12">-->
-                <!--<p>This is some text with some inline <code>source code</code> and some keyboard <kbd>input</kbd>.</p>-->
-                <!--<blockquote cite="www.quotation.source">This is some text quoted from elsewhere.</blockquote>-->
-            <!--</div>-->
-            <!--<div class="col-sm-12">-->
-                <!--<p>This is some text with some inline <code>source code</code> and some keyboard <kbd>input</kbd>.</p>-->
-                <!--<blockquote cite="www.quotation.source">This is some text quoted from elsewhere.</blockquote>-->
-            <!--</div>-->
-            <!--<div class="col-sm-12">-->
-                <!--<p>This is some text with some inline <code>source code</code> and some keyboard <kbd>input</kbd>.</p>-->
-                <!--<blockquote cite="www.quotation.source">This is some text quoted from elsewhere.</blockquote>-->
-            <!--</div>-->
-
-        <!--</div>-->
-    <!--</div>-->
-    <!--<div class="row">-->
-        <!--<h2>Những chuyến đi lon ton</h2>-->
-    <!--</div>-->
-    <!--<div class="row">-->
-        <!--<h2>Câu chuyện về “Đi Lon Ton”</h2>-->
-        <!--<p class="major">🌟 “Đi lon ton” là dự án truyện tranh thiếu nhi với mong muốn khơi gợi niềm yêu thích khám phá thế-->
-            <!--giới xung quanh và xây dựng nền tảng kiến thức thú vị, bổ ích cho các bạn nhỏ Việt Nam.</p>-->
-    <!--</div>-->
+    <div class="row">
+        <div class="col-sm-12 blk-arts" style="padding: 40px 0; text-align: center">
+            <img src="assets/img/bird.png" width="150"/>
+        </div>
+    </div>
 </div>
 
 <div class="container">
